@@ -29,6 +29,9 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install requests
           python -m pip install beautifulsoup4
+          python -m pip install python-dotenv
+          python -m pip install ratelimit
+          python -m pip install urllib3
 
       - name: Run Python script
         run: |
