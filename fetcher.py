@@ -5,7 +5,7 @@ from urllib3.util.retry import Retry
 from concurrent.futures import ThreadPoolExecutor
 import re
 import logging
-from ratelimit import limits, sleep_and_retry  # اضافه کردن ratelimit
+from ratelimit import limits, sleep_and_retry
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
