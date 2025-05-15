@@ -5,6 +5,7 @@ from urllib3.util.retry import Retry
 from concurrent.futures import ThreadPoolExecutor
 import re
 import logging
+from ratelimit import limits, sleep_and_retry  # اضافه کردن ratelimit
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -86,7 +87,7 @@ def get_region_from_ip(ip: str) -> str:
         str: Country code or None if not found.
     """
     api_endpoints = [
-        f'https://ip sister's note: api.co/{ip}/json/',
+        f'https://ipapi.co/{ip}/json/',  # URL اصلاح‌شده
         f'http://ipwho.is/{ip}?output=json',
         f'http://www.geoplugin.net/json.gp?ip={ip}',
         f'https://api.ipbase.com/v1/json/{ip}'
