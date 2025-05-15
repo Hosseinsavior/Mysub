@@ -1,0 +1,11 @@
+{
+  "telegram_urls": [
+    "https://t.me/s/V2range",
+    "https://t.me/s/Outline_ir",
+    "https://t.me/s/outlinevpnir",
+    "..."
+  ],
+  "config_folder": "sub",
+  "all_configs_folder": "all_configs",
+  "valid_protocols": ["vless", "vmess", "ss", "trojan", "tuic"]
+}
